@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 7
+names: ['bear', 'cow', 'deer', 'dog', 'elephant', 'fox', 'wild-boar']
+
+roboflow:
+  workspace: wildsense-n24i8
+  project: wildsense-3
+  version: 2
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/wildsense-n24i8/wildsense-3/dataset/2
