@@ -71,6 +71,7 @@ try:
         # # Optional: apply a colormap (comment out if you want pure grayscale)
         # disp = cv2.applyColorMap(disp8, cv2.COLORMAP_INFERNO)
         # disp = disp8  # use this instead for grayscale
+        
         rois = get_thermal_rois(img_destriped, min_area=30, max_rois=8, pad=0.3)
         rois = merge_rois(rois, iou_thr=0.3)
 
